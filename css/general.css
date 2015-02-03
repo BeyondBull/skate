@@ -1,3 +1,4 @@
+
 a {
 	text-decoration: none;
 }
@@ -8,6 +9,7 @@ h1, h2 {
 }
 body {
 	color: #57534C;
+	background: #fff;
 }
 
 ul {
