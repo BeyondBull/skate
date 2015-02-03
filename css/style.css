@@ -7,7 +7,8 @@
 	width: 90%;
 	margin: auto;
 }
-.col_content li {
+.col_content ul {
+	margin-bottom: 50px;
 }
 
 .col {
@@ -25,9 +26,6 @@
 	font-family: 'PT Serif', serif;
 	color: #57534C;
 
-}
-.secondary li {
-	margin: 5px;
 }
 .extra {
 	display: none;
