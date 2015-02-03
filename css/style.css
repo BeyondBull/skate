@@ -1,31 +1,48 @@
-
 .page_content {
 	width: 96%;
 	margin: auto;
-	padding-top: 15%;
+	padding-top: 20%;
 }
 .col_content {
 	width: 90%;
 	margin: auto;
+}
+.col_content li {
 }
 
 .col {
 	margin-top: 2%;
 	border-radius: 5px;
 }
+
 .main {
+	margin-top: 20%;
 }
 
 .secondary {
+}
+.secondary h2 {
+	font-family: 'PT Serif', serif;
+	color: #57534C;
+
+}
+.secondary li {
+	margin: 5px;
 }
 .extra {
 	display: none;
 }
 
+#contact_content {
+	width: 80%;
+	margin: auto;
+}
 img {
   max-width: 100%;
   border-radius: 100%;
+  opacity: 0.8;
 }
+
 
 .gallery {
   margin: 0;
@@ -47,7 +64,6 @@ img {
   color: #bdc3c7;
 }
 .contact-info {
-  list-style: none;
   padding: 0;
   margin: 0;
   font-size: 0.9em; 
@@ -60,6 +76,7 @@ img {
   background-size: 20px 20px;
   padding: 0 0 0 30px;
   margin: 0 0 10px;
+  color: gray;
 }
 
 .contact-info li.phone a {
@@ -73,16 +90,36 @@ img {
 .contact-info li.twitter a {
   background-image: url('../img/twitter.png');
 }
-
-
+.coach-profile {
+	margin: 15% 5%;
+}
+.profile-photo {
+	float: left;
+	margin: 20px;
+	opacity: 1;
+	width: 30%;
+	border-radius: 0%;
+}
+.coach-bio {
+	width 70%;
+}
+.coach-bio a {
+	color: #57534C;
+	text-decoration: underline;
+}
 /* Phones to Tablets */
 
 @media only screen and (min-width: 481px) {
+	.page_content {
+	padding-top: 5%;
+	}
+
 	.col {
 		float: left;
 	}
 	.main {
 		width: 66%;
+		margin-top: 0;
 	}
 	.secondary {
 		width: 32%; 
@@ -97,18 +134,17 @@ img {
 	img {
 	  max-width: 100%;
 	}
-	
 	.gallery {
 	  margin: 0;
 	  list-style: none;
 	}
-	
 	.gallery li {
 	  float: left;
 	  width: 31.3333%;
 	  margin: 1%;
 	  color: #bdc3c7;
 	}
+
 }
 
 /* Tablets to Desktop */

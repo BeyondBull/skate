@@ -27,6 +27,7 @@
 	display: inline-block;
 	text-align: center;
 	margin: 13px 0;
+	width: 100%;
 }
 .sub_page_nav a {
 	margin-left: 20px;	
@@ -51,6 +52,7 @@
 	.sub_page_nav {
 		float: right;
 		margin: 40px 20px 0px 0px;
+		width: auto;
 	}
 	.sub_page_nav a {
 		padding: 40px 2px 2px 2px;
