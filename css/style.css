@@ -1,68 +1,243 @@
-.page_content {
-	width: 96%;
-	margin: auto;
-	padding-top: 20%;
+/*  General
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------ */
+html {
 }
-.col_content {
+a {
+	text-decoration: none;
+}
+
+h2, h3 {
+	font-weight: 300;
+}
+
+p {
+}
+body {
+	color: #4A4749;
+}
+
+ul {
+	list-style: none;
+}
+li {
+}
+
+
+
+/*  Header
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------ */
+#header {
+	width: 100%;
+	float: left;
+	border-top: #112461 solid 7px;
+}
+#main-nav {
+	border-top: #92C3DB solid 3px;
+}
+#site-title a {
+  color: #4A4749;
+}
+#site-title h1 {
+	font-size: 1.8em;
+	font-weight: 100;
+	font-variant: small-caps;
+	text-align: center;
+	margin: 0;
+	padding-top: 7px;
+	color: #4A4749;
+}
+#site-title h2 {
+	margin: 0;
+	font-size: 1em;
+	text-align: center;
+	color: #92C3DB;
+}
+#sub-page-nav {
+	display: inline-block;
+	text-align: center;
+	margin: 20px 0;
+	width: 100%;
+}
+#sub-page-nav a {
+	margin: 0 15px;	
+	background: #EAE8E9;
+	color: #4A4749;
+	font-weight: 300;
+	padding: 7px 3px 3px 3px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0px 1px 2px 1px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+	-moz-box-shadow:    0px 1px 2px 1px #ccc;  /* Firefox 3.5 - 3.6 */
+	box-shadow:         0px 1px 2px 1px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+/*Tablet*/
+@media screen and (min-width: 641px) {
+	#site-title {
+		float: left;
+		margin-left: 3%;
+		padding-top: 20px;
+	}
+	#main-nav {
+		
+	}
+	#site-title h1 {
+		text-align: right;
+	}
+	#site-title h2 {
+		text-align: right;
+	}
+	#sub-page-nav {
+		float: right;
+		margin: 50px 3% 0px 0px;
+		width: auto;
+	}
+	#sub-page-nav a {
+		padding: 50px 7px 3px 7px;
+		border-radius: 0;
+		-o-transition:.2s;
+		-ms-transition:.2s;
+		-moz-transition:.2s;
+		-webkit-transition:.2s;
+		transition:.2s;
+		-webkit-box-shadow: none;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+		-moz-box-shadow:    none;  /* Firefox 3.5 - 3.6 */
+		box-shadow:         none;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+	}
+	#sub-page-nav a.current_page {
+	color: #A70923;
+	}
+	#sub-page-nav a:hover {
+		border-bottom: none;
+		border-left: none;
+		border-right: none;	
+		border-bottom: #A70923 solid 1px;
+	}
+}
+
+
+
+/*  Layout
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------ */
+.page-content {
+	width: 90%;
+	margin: 0 5%;
+	padding-top: 15%;
+}
+.col-content {
 	width: 90%;
 	margin: auto;
 }
-.col_content ul {
+.col-content li {
+	margin-bottom: 5px;
+}
+.col {
+	margin-top: 2%;
+	
+}
+.secondary ul {
+	padding-bottom: 20px;
+}
+/* Phones to Tablets */
+@media only screen and (min-width: 641px) {
+	.col {
+		float: left;
+	}
+	.main {
+		width: 66%;
+	}
+	.secondary {
+		width: 32%; 
+	}
+	.secondary {
+		margin-left: 2%;
+	}
+}
+
+
+
+
+/*  Home Page
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------ */
+.home ul {
+	padding: 0;
 	margin-bottom: 50px;
 }
 
-.col {
-	margin-top: 2%;
+.home li {
+  display:block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 3px 0 0 30px;
+  margin: 0 0 10px;
 }
-
-.main {
-	margin-top: 20%;
+.home li.dance {
+	background-image: url(../icon/skateIcon-2.png);
 }
-
-.secondary {
-	-moz-box-shadow:    inset 0 0 10px #57534C;
-	-webkit-box-shadow: inset 0 0 10px #57534C;
-	box-shadow:         inset 0 0 10px #57534C;
-	padding: 20px 0;
-	border-radius: 10px;
+.home li.freeskate {
+	background-image: url(../icon/skateIcon-5.png);
 }
-.secondary h2 {
-	color: #57534C;
-
+.home li.chor {
+	background-image: url(../icon/skateIcon-3.png);
 }
-.extra {
-	display: none;
+.home li.moves {
+	background-image: url(../icon/skateIcon-4.png);
 }
-
-#contact_content {
-	width: 80%;
-	margin: auto;
+.home li.skills {
+	background-image: url(../icon/skateIcon-1.png);
 }
-img {
-  max-width: 100%;
-  border-radius: 100%;
-  opacity: 0.8;
+.home address{
+	font-size: .8em;
+}
+.home h4{
+	font-size: .9em;
+	margin-bottom: 7px;
 }
 
 
-.gallery {
-  margin: 0;
-  padding: 5px;
-  list-style: none;
+
+/*  Coaches Page
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------ */
+.coach-profile {
+	margin: 15% 5%;
+}
+.profile-photo {
+	float: left;
+	margin: 20px;
+	opacity: 1;
+	width: 30%;
+	border-radius: 0%;
+}
+.coach-bio {
+	width 70%;
+}
+.coach-bio a {
+	color: #4A4749;
+	text-decoration: underline;
 }
 
-.gallery li {
-  float: left;
-  width: 95%;
-  margin: 2.5%;
-  color: #bdc3c7;
-}
 
-.gallery li a p {
-  margin: 0;
-  padding: 5%;
-  font-size: 0.75em;
-  color: #bdc3c7;
+
+/*  Contect Page
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------ */
+.contact {
+	padding-top: 120px;
+}
+.contact ul {
+	margin-bottom: 30px;
+	padding: 7px;
 }
 .contact-info {
   padding: 0;
@@ -81,72 +256,22 @@ img {
 }
 
 .contact-info li.phone a {
-  background-image: url('../img/phone.png');
+  background-image: url('../icon/phone.png');
 }
 
 .contact-info li.mail a {
-  background-image: url('../img/mail.png');
+  background-image: url('../icon/mail.png');
 }
 
 .contact-info li.twitter a {
-  background-image: url('../img/twitter.png');
-}
-.coach-profile {
-	margin: 15% 5%;
-}
-.profile-photo {
-	float: left;
-	margin: 20px;
-	opacity: 1;
-	width: 30%;
-	border-radius: 0%;
-}
-.coach-bio {
-	width 70%;
-}
-.coach-bio a {
-	color: #57534C;
-	text-decoration: underline;
-}
-/* Phones to Tablets */
-
-@media only screen and (min-width: 481px) {
-	.page_content {
-	padding-top: 5%;
-	}
-
-	.col {
-		float: left;
-	}
-	.main {
-		width: 66%;
-		margin-top: 0;
-	}
-	.secondary {
-		width: 31%; 
-		margin-left: 2%;
-	}
-	.extra {
-		display: block;
-		width: 100%;
-	}
-	img {
-	  max-width: 100%;
-	}
-	.gallery {
-	  margin: 0;
-	  list-style: none;
-	}
-	.gallery li {
-	  float: left;
-	  width: 31.3333%;
-	  margin: 1%;
-	  color: #bdc3c7;
-	}
-
+  background-image: url('../icon/twitter.png');
 }
 
-/* Tablets to Desktop */
-
-@media only screen and (min-width: 769px) {	
+@media screen and (min-width: 641px) {
+	.contact {
+		padding-top: 90px;
+	}
 }
+
+
+

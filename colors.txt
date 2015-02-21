@@ -1,0 +1,5 @@
+Gray #4A4749
+Red #A70923
+Off White #EAE8E9
+Light Blue #92C3DB
+Dark Blue #212542
