@@ -120,6 +120,10 @@ li {
 
 
 
+
+
+
+
 /*  Layout
 ------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------
@@ -127,7 +131,7 @@ li {
 .page-content {
 	width: 90%;
 	margin: 0 5%;
-	padding-top: 15%;
+	float: left;
 }
 .col-content {
 	width: 90%;
@@ -158,7 +162,53 @@ li {
 		margin-left: 2%;
 	}
 }
+@media only screen and (min-width: 961px) {
+	.page-content {
+		width: 80%;
+		margin: 0 10%;
+	}
+}
+@media only screen and (min-width: 1025px) {
+	.page-content {
+		width: 60%;
+		margin: 0 20%;
+	}
+}
 
+
+
+/*  Footer
+------------------------------------------
+------------------------------------------ */
+#page-footer {
+	width: 100%;
+	float: left;
+	margin-top: 130px;
+	margin-bottom: 20px;
+}
+#page-footer ul {
+	width: 100%;
+	margin: 0;
+	padding: 7px 0;
+	text-align: center;
+	float: left;
+	list-style: none;
+}
+#page-footer li {
+	padding-top: 3px;
+	font-weight: 100;
+	font-size: .8em;
+}
+#page-footer a {
+	color: #A60014;
+	font-family: 'Crimson Text', serif;
+}
+/* Phones to Tablets */
+@media only screen and (min-width: 641px) {
+#page-footer ul {
+		width: 50%;
+	}
+}
 
 
 
@@ -201,7 +251,14 @@ li {
 	font-size: .9em;
 	margin-bottom: 7px;
 }
-
+.home a {
+	color: #A70923;
+}
+@media screen and (min-height: 700px) {
+	.home {
+		padding-bottom: 230px;
+	}
+}
 
 
 /*  Coaches Page
